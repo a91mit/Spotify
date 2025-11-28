@@ -7,13 +7,6 @@ Find all tracks that belong to the album type single.
 Retrieve the track names that have been streamed on Spotify more than YouTube.
 */
 
-count the total number of tracks by each artist.
-select count(*)
-from spotify;
-
-select count(distinct album)
-from spotify;
-
 --Q.1 Retrieve the names of all tracks that have more than 1 billion streams.
 select album
 from spotify
@@ -119,6 +112,7 @@ with energy_level as (select album,
 select album,highest - lowest as energy_diff
 from energy_level
 order by 2 desc
+
 
 
 
